@@ -12,8 +12,8 @@ Class Projects and Notes
  ffmpeg -threads 2 -y -r 5 -i pic-%03d.jpg  output.mp4
 ```
 ## SSD 学习笔记
-###Permute（通道顺序交换）
+### Permute（通道顺序交换）
 Permute层就是交换的作用，比如你卷积后的维度是32×24×19×19，那么经过交换层后就变成32×19×19×24，顺序变了而已。
 
-###Flatten（压扁）
+### Flatten（压扁）
 而flatten层的作用就是将32×19×19×24变成32*8664，32是batchsize的大小。
